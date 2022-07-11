@@ -1,0 +1,750 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400, 300, 600, 800, 700, 500&display=swap);
+
+@charset "UTF-8";
+
+/* 100 - Thin*/
+
+/* 200 - ExtraLight*/
+
+/* 300 - Light*/
+
+/* 400 - Regular*/
+
+/* 500 - Medium*/
+
+/* 600 - SemiBold*/
+
+/* 700 - Bold*/
+
+/* 800 - ExtraBold*/
+
+/* 900 - Black*/
+
+@font-face {
+  font-family: icons;
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+[class*=_icon-]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class*=_icon-]:before {
+  display: block;
+}
+
+._icon-uniE900:before {
+  content: "\e900";
+}
+
+._icon-arrow:before {
+  content: "\e901";
+}
+
+._icon-boll:before {
+  content: "\e902";
+}
+
+._icon-branding:before {
+  content: "\e903";
+}
+
+._icon-design:before {
+  content: "\e904";
+}
+
+._icon-e-comm:before {
+  content: "\e905";
+}
+
+._icon-fill:before {
+  content: "\e906";
+}
+
+._icon-human:before {
+  content: "\e907";
+}
+
+._icon-instagram:before {
+  content: "\e908";
+}
+
+._icon-learning:before {
+  content: "\e909";
+}
+
+._icon-mobile:before {
+  content: "\e90a";
+}
+
+._icon-payment:before {
+  content: "\e90b";
+}
+
+._icon-quote:before {
+  content: "\e90c";
+}
+
+._icon-telegram:before {
+  content: "\e90d";
+}
+
+._icon-worldr:before {
+  content: "\e90e";
+}
+
+._icon-youtube:before {
+  content: "\e90f";
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  color: #AAA;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+  background-color: #12141d;
+}
+
+.lock body {
+  overflow: hidden;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  /*100%*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper > * {
+  min-width: 0;
+}
+
+/*
+(i) Стили будут применяться ко
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+Снипет (HTML): cnt
+*/
+
+[class*=__container] {
+  max-width: 69.375rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+/*[class*="__container_wide"] {   //устанавливаем ширину *широкого контенера (при необходимости)
+	max-width: rem(1680);
+}*/
+
+/*.button {
+	//display: inline-flex; //под макет
+	padding: rem(8) rem(32);//отступы внутри кнопки до текста кнопки
+	@extend %cuf;//подключение основного шрифта (по макету)
+	font-weight: 700 ;
+	line-height: 175%;
+	background-color: $mainYellow;
+	color: $mainDark;
+	text-align: center;
+	transition: background-color 0.3s ease 0s;
+	@media (any-hover: hover) { //ховер для кнопок сайта
+		&:hover {
+			background-color: $mainDarkYellow;
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}
+*/
+
+.button-contactus {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0.8125rem 1.6875rem;
+  font-weight: 700;
+  line-height: 150%;
+  background-color: #4080bf;
+  font-size: 1.125rem;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  text-transform: capitalize;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
+  max-height: 53px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+@supports (max-height: clamp( 2.625rem , 1.0811403509rem  +  3.216374269vw , 3.3125rem )) {
+  .button-contactus {
+    max-height: clamp( 2.625rem , 1.0811403509rem  +  3.216374269vw , 3.3125rem );
+  }
+}
+
+@supports not (max-height: clamp( 2.625rem , 1.0811403509rem  +  3.216374269vw , 3.3125rem )) {
+  .button-contactus {
+    max-height: calc(2.625rem + 0.6875 * (100vw - 48rem) / 21.375);
+  }
+}
+
+[data-fullscreen] {
+  min-height: 100vh;
+}
+
+.touch [data-fullscreen] {
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+[class*=-ibg] {
+  position: relative;
+}
+
+[class*=-ibg] img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+[class*=-ibg_contain] img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.button-contactus {
+  font-family: "Poppins";
+}
+
+/*
+//Глобальный фон
+.main-bg {
+   position: fixed; // работаем с полноэкранным фоном background (по макету)
+   top: -10%;
+   left: 0;
+   width: 100%;
+   height: 120%;
+   background: url("../img/main-bg.jpg") center/cover no-repeat;
+
+}
+
+//Шапка блока
+.block-header { // БЭМ блок который повторяеться в макете
+   @extend %cuf; //подключаем шрифт по умолчанию
+   display: grid;
+   gap: 8px; //стандартный отступ между под заголовком и заголовком
+   text-transform: capitalize;
+   justify-items: center;
+   // .block-header__sub-title
+
+   &__sub-title {//параметры БЭМ-блока по умолчанию (с модификаторами)
+      color: $mainWhite;
+      font-weight: 700;
+      @include adaptiveValue("font-size", 23, 23);
+      line-height: 130%;
+      letter-spacing: 0.04em;
+      display: grid;
+      gap: 8px;
+      justify-items: center;
+
+      &::after {
+         @extend %ic; //подключаем иконочный шаблон что бы добавить иконочный шрифт
+         content: "\e904"; //добавляем иконочный шрифт (код иконки)
+         color: $mainYellow;
+         font-size: em(9, 23); //привязыввем размер ложки к размеру заголовка
+      }
+   }
+
+   // .block-header__title
+
+   &__title {//параметры БЭМ-блока по умолчанию
+      color: $mainYellow;
+      font-weight: 600;
+      @include adaptiveValue("font-size", 64, 64);
+      line-height: 130%;
+      letter-spacing: 0.03em;
+   }
+
+   // .block-header_big
+
+   &_big {//модифицируем БЭМ-блок по умолчанию под макет
+      .block-header__title {
+         @include adaptiveValue("font-size", 90, 40);
+      }
+   }
+
+   // .block-header_left
+
+   &_left {
+      justify-items: stretch;
+
+      .block-header__sub-title {
+         justify-items: stretch;
+      }
+   }
+}
+
+//Кнопка скролла и "вверх"
+.scroll {
+   @extend %cuf; //шрифт по умолчанию
+   color: $mainYellow;
+   text-transform: uppercase;
+   font-weight: 700;
+   line-height: 175%;
+   letter-spacing: 0.04em;
+   display: grid;
+   justify-items: center;
+   gap: 24px;
+   &::before{//создаем полоску с градиентом надо скроллом
+      content: "";
+      background: rgb(220, 202, 135);
+      background: linear-gradient(180deg, rgba(220, 202, 135, 1) 66%, rgba(220, 202, 135, 0.24) 100%);
+      width: 1px;
+      height: 60px;
+
+   }
+
+
+}
+
+//Стили для основного текста сайта (через селектор)
+[class*="__text"]{
+   line-height: 175%;
+}
+*/
+
+/*===============================================*/
+
+.icon-menu {
+  display: none;
+}
+
+.header {
+  color: white;
+  padding: 12px 0;
+  width: 100%;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__column_logo {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 150%;
+  position: relative;
+  z-index: 2;
+}
+
+@supports (font-size: clamp( 1.5625rem , 0.860745614rem  +  1.4619883041vw , 1.875rem )) {
+  .header__column_logo {
+    font-size: clamp( 1.5625rem , 0.860745614rem  +  1.4619883041vw , 1.875rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.5625rem , 0.860745614rem  +  1.4619883041vw , 1.875rem )) {
+  .header__column_logo {
+    font-size: calc(1.5625rem + 0.3125 * (100vw - 48rem) / 21.375);
+  }
+}
+
+.contactus {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+.menu__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@supports (gap: clamp( 1.25rem , -1.5570175439rem  +  5.8479532164vw , 2.5rem )) {
+  .menu__list {
+    gap: clamp( 1.25rem , -1.5570175439rem  +  5.8479532164vw , 2.5rem );
+  }
+}
+
+@supports not (gap: clamp( 1.25rem , -1.5570175439rem  +  5.8479532164vw , 2.5rem )) {
+  .menu__list {
+    gap: calc(1.25rem + 1.25 * (100vw - 48rem) / 21.375);
+  }
+}
+
+.menu__item {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.menu__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+/*
+//====================================================================================================
+.footer {
+   position: relative; //для работы с background (по макету)
+   z-index: 2;//выносим на передний план
+}
+//====================================================================================================
+*/
+
+/*=================================================*/
+
+.swiper {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.swiper-vertical .swiper-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.swiper-autoheight .swiper-wrapper {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.swiper-initialized .swiper-slide {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.swiper-android .swiper-slide,
+.swiper-android .swiper-wrapper {
+  -webkit-transform: translate3d(0px, 0, 0);
+          transform: translate3d(0px, 0, 0);
+}
+
+.swiper-button-lock {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .header__column_logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
+  .contactus {
+    margin-right: 0.625rem;
+  }
+}
+
+@media (max-width: 47.99875em) {
+  .touch [data-fullscreen] {
+    -webkit-transition: height 0.2s;
+    -o-transition: height 0.2s;
+    transition: height 0.2s;
+  }
+
+  .icon-menu {
+    display: block;
+    position: relative;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 2.5rem;
+            flex: 0 0 2.5rem;
+    height: 1.40625rem;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .icon-menu span,
+  .icon-menu::before,
+  .icon-menu::after {
+    content: "";
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 0.125rem;
+    background-color: #fff;
+  }
+
+  .icon-menu::before {
+    top: 0;
+  }
+
+  .icon-menu::after {
+    bottom: 0;
+  }
+
+  .icon-menu span {
+    top: calc(50% - 0.0625rem);
+  }
+
+  .menu-open .icon-menu span {
+    width: 0;
+  }
+
+  .menu-open .icon-menu::before {
+    top: calc(50% - 0.0625rem);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+
+  .menu-open .icon-menu::after {
+    bottom: calc(50% - 0.0625rem);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+  .contactus {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .menu__body {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    -webkit-transition: left 0.3s ease 0s;
+    -o-transition: left 0.3s ease 0s;
+    transition: left 0.3s ease 0s;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+@supports (padding-top: clamp( 4.375rem , 3.887195122rem  +  2.4390243902vw , 5.625rem )) {
+    .menu__body {
+      padding-top: clamp( 4.375rem , 3.887195122rem  +  2.4390243902vw , 5.625rem );
+    }
+}
+
+@supports not (padding-top: clamp( 4.375rem , 3.887195122rem  +  2.4390243902vw , 5.625rem )) {
+    .menu__body {
+      padding-top: calc(4.375rem + 1.25 * (100vw - 20rem) / 51.25);
+    }
+}
+
+  .menu__body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 64px;
+    top: -100%;
+    left: 0;
+    background-color: black;
+    -webkit-transition: top 0.3s ease 0s;
+    -o-transition: top 0.3s ease 0s;
+    transition: top 0.3s ease 0s;
+  }
+
+  .menu-open .menu__body {
+    left: 0;
+  }
+
+  .menu-open .menu__body::before {
+    top: 0;
+  }
+
+  .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+@supports (gap: clamp( 0.9375rem , -0.1785714286rem  +  5.5803571429vw , 2.5rem )) {
+    .menu__list {
+      gap: clamp( 0.9375rem , -0.1785714286rem  +  5.5803571429vw , 2.5rem );
+    }
+}
+
+@supports not (gap: clamp( 0.9375rem , -0.1785714286rem  +  5.5803571429vw , 2.5rem )) {
+    .menu__list {
+      gap: calc(0.9375rem + 1.5625 * (100vw - 20rem) / 28);
+    }
+}
+
+  .menu__list :last-child {
+    padding-bottom: 1.25rem;
+  }
+
+  .menu__link {
+    color: #a1c5e9;
+  }
+
+@supports (font-size: clamp( 1.5625rem , 0.8928571429rem  +  3.3482142857vw , 2.5rem )) {
+    .menu__link {
+      font-size: clamp( 1.5625rem , 0.8928571429rem  +  3.3482142857vw , 2.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5625rem , 0.8928571429rem  +  3.3482142857vw , 2.5rem )) {
+    .menu__link {
+      font-size: calc(1.5625rem + 0.9375 * (100vw - 20rem) / 28);
+    }
+}
+}
+
+@media (any-hover: hover) {
+  .button-contactus:hover {
+    background-color: #6792bc;
+  }
+}
